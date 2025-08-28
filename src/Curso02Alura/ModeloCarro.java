@@ -8,6 +8,6 @@ public class ModeloCarro extends CarroNovo{
         modelo1.setPrecoPrimeiroAno(79990);
         modelo1.setPrecoSegundoAno(84990);
         modelo1.setPrecoTerceiroAno(64599);
-        modelo1.getMaiorEMenorPreco();
+        modelo1.printMaiorEMenorPreco();
     }
 }

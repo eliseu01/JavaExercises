@@ -1,8 +1,12 @@
 package Curso02Alura;
 
 import Curso02Alura.br.com.alura.screenmatch.calculos.CalculadoraDuracao;
+import Curso02Alura.br.com.alura.screenmatch.calculos.FiltroRecomendacao;
+import Curso02Alura.br.com.alura.screenmatch.modelos.Episodio;
 import Curso02Alura.br.com.alura.screenmatch.modelos.Filme;
 import Curso02Alura.br.com.alura.screenmatch.modelos.Serie;
+
+import java.security.spec.ECPoint;
 
 public class Principal {
     public static void main(String[] args) {
@@ -34,5 +38,15 @@ public class Principal {
         calculadora.addTitulo(filme1);
         calculadora.addTitulo(serie1);
         System.out.println(("A lista tem reprodução tem %d minutos de duração.").formatted(calculadora.getTempoTotal()));
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(filme1);
+
+        Episodio ep1 = new Episodio();
+        ep1.setNumero(1);
+        ep1.setNome("O caos");
+        ep1.setSerie(serie1);
+        ep1.setTotalVisualizacoes(200);
+        filtro.filtra(ep1);
     }
 }

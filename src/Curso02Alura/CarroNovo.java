@@ -76,7 +76,7 @@ public class CarroNovo {
         }
     }
 
-    public void getMaiorEMenorPreco(){
+    public void printMaiorEMenorPreco(){
         this.atualizarMenorEMaiorPreco();
         System.out.println(("""
                 O maior preço deste modelo foi no %s ano: %.2f.
